@@ -1,0 +1,30 @@
+<div class="task-manager">
+  <h1>ToDo List Manager</h1>
+  <form (ngSubmit)="addTask()">
+    <input type="text" [(ngModel)]="newTask.name" name="name" placeholder="Name" required />
+    <input type="text" [(ngModel)]="newTask.description" name="description" placeholder="Description" required />
+    <button type="submit">Add</button>
+  </form>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Done</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let task of tasks">
+        <td>{{ task.name }}</td>
+        <td>{{ task.description }}</td>
+        <td>
+          <input type="checkbox" [(ngModel)]="task.done" (change)="updateTask(task)" />
+        </td>
+        <td>
+          <button (click)="deleteTask(task.id)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

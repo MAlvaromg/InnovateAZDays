@@ -1,0 +1,65 @@
+.task-manager {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-manager h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-manager form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.task-manager form input {
+  flex: 1;
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-manager form button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-manager table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.task-manager table th, .task-manager table td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.task-manager table th {
+  background-color: #f8f9fa;
+}
+
+.task-manager table td input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.task-manager table td button {
+  padding: 4px 8px;
+  border: none;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
